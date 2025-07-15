@@ -5,7 +5,7 @@ const originalFunc = (num) => { return num + 2 };
 const newFunc = originalFunc;
 
 //Access the function's name property
-newFunc.name; //'originalFunc'
+newFunc.name //'originalFunc'
 
 //Return the function's body as a string
 newFunc.toString(); //'(num) => { return num + 2 }'
@@ -15,7 +15,7 @@ newFunc.isMathFunction = true;
 
 //Pass the function as an argument
 const functionNameLength = (func) => { return func.name.length }; 
-functionNameLength(originalFunc); //12
+console.log(functionNameLength(originalFunc)); //12
 
 //Return the function
 const returnFunc = () => { return newFunc };
